@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conteudo das aulas JS">
+    <meta name="keywords" content="site, web,,frontend  ">
+    <meta name="author" content="Ana livia">
+    <title>Exercicio 01</title>
+    <link rel="icon" type="img_js" href="img_js.png">
+ 
+</head>
+<body>
+       <h1>Exercicio 1</h1>
+       <div>
+    <hr>
+        <img src="img/imag.png"alt="tartaruga">
+        <button onclik="trocar_img">trocar_img</button>
+      </div> 
+      <script>
+      function trocar_img(){
+         const tags_img = document.getElementsByTagName('img')
+       console.log(tags_img);
+        let tags_img_1 = tags_img[0]
+
+        tags_img_1.src="..//Aula02/img/imag.png"
+        
+      }
+      
+
+      
+      </script>    
+   
+    
+</body>
+</html>
