@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conteudo das aulas JS">
+    <meta name="keywords" content="site, web,,frontend  ">
+    <meta name="author" content="Ana livia">
+    <title>operaçao</title>
+    <link rel="icon" type="img_js" href="img_js.png">
+ 
+</head>
+<body>
+       <h1>vamos resolver a operação</h1>
+    <hr>
+    <h2>
+      <script>
+      
+        let numero = window.prompt("digite um numero ");
+        numero= parseInt(numero)
+
+        let numero2 = window.prompt("digite outro numero ");
+        numero= parseInt(numero2)
+
+
+        let operacao= window.prompt("digite a operaçao ");
+        if( operacao =="+" ){
+          resultado=numero+numero2
+        }
+        else if(operacao =="*"){
+          resultado=numero*numero2
+        }
+      
+        else if  (operacao =="-"){
+          resultado = numero-numero2
+        }
+         else{
+          if ( numero2 == 0 ){
+            resultado="na foi possivel fazer essa conta"
+          }
+        }
+        
+
+        
+        document.getElementsByTagName("h2")[0].innerText = "O resultado da operação e: "+resultado
+       
+       
+
+        
+      </script>
+       </h2>
+   
+    
+</body>
+</html>
